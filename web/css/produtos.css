@@ -1,0 +1,177 @@
+/* Variaveis */
+:root {
+  --yellow-primary: #fec633;
+}
+
+.introducao-produto {
+  background: url("../img/bg-produtos.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.produto_item {
+  padding-top: 60px;
+}
+
+.produto_item > div {
+  height: 280px;
+}
+
+.produto_item_presentation {
+  position: relative;
+}
+
+.produto_item_presentation h2 { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #fff;
+  font-size: 36px;
+}
+
+.produto_item_presentation h2:before, .produto_item_presentation h2:after{ 
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 10px auto;
+}
+
+.produto_icone {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.produto_icone img {
+  margin: 0 auto;
+}
+
+.produto_info {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.produto_info p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 30px 40px;
+  flex: 1;
+}
+
+.produto_info .produto_detalhes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100px;
+  grid-gap: 8px;
+}
+
+.produto_info .produto_detalhes li {
+  background: var(--yellow-primary);
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+/* Orçamento */
+.orcamento {
+  width: 100%;
+  background: #000;
+  padding: 60px 0 30px;
+  margin-top: 60px;
+}
+
+.orcamento .subtitulo {
+  color: var(--yellow-primary);
+}
+.orcamento .subtitulo:after {
+  background: var(--yellow-primary);
+}
+
+.form_orcamento {
+  padding-right: 60px;
+}
+
+.form_orcamento .form_group {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.form_orcamento .form_group label {
+  display: block;
+  padding-bottom: 3px;
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.form_orcamento .form_group input, 
+.form_orcamento .form_group textarea,
+.form_orcamento button {
+  display: block;
+  width: 100%;
+  background: none;
+  color: #fff;
+  padding: 5px 0;
+  border: 3px solid var(--yellow-primary);
+  width: 400px;
+  outline: none;
+}
+
+.form_orcamento button {
+  color: var(--yellow-primary);
+  width: 150px;
+  padding: 5px 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.orcamento_dados {
+  color: #fff;
+}
+
+.orcamento_dados h3 {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: var(--yellow-primary);
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.orcamento_dados span {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.orcamento_dados ul {
+  padding-right: 60px;
+}
+
+.orcamento_dados ul li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.orcamento_dados ul li:nth-child(odd) {
+  background: #1d1d1d;
+}
+
+.orcamento_dados p {
+  margin: 8px 0;
+}
